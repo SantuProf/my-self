@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.playfair-display-<uniquifier> {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.hero{
+   
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1; 
+    position: fixed;
+    
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1% 5%;
+    background: rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+.logo{
+    
+    color: rgb(255, 221, 0);
+    user-select: none;
+
+}
+.navigation a{
+position: relative;
+font-size: 1.1em;
+color: #fff;
+text-decoration: none;
+font-weight: 500;
+margin-left: 40px ;
+}
+.navigation a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 1%;
+    width: 100%;
+    height: 10%;
+    background: rgb(255, 221, 0);
+    border-radius: 10%;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+.navigation a:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+main{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+section{
+
+}
+section h3{
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+}
+section h1{
+    margin: 30px 0 20px 0;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+}
+section p{
+    font-size: 25px;
+    color: #eee;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+section a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration:none;
+    letter-spacing: 1px;
+    transition: all .5s ease;
+}
+section .btnone{
+    background: rgb(255, 221, 0);
+    
+}
+.btnone:hover{
+    background: #fff;
+    color: #000;
+}
+section .btntwo{
+    background: #fff;
+    color: #000;
+}
+.btntwo:hover{
+    background: rgb(255, 221, 0);
+}
+
+.change_content:after{
+    content: '';
+    animation: changetext 10s infinite linear;
+    color: rgb(255, 221, 0);
+}
+@keyframes changetext {
+    0%{content: "An Web Developer";}
+    25%{content: "An Artist";}
+    45%{content:"A Photographer";}
+    60%{content:"A photo and Video editor";}
+    75%{content:"An athlete";}
+    90%{content:"An app develooper";}
+    
+}
+.container{
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    
+}
+.container a{
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(255, 221, 0);
+    font-size: 24px;
+    border: 2px solid rgb(255, 221, 0);
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+.prof{
+    color: #fff;
+    text-align: center;
+    padding: 12% 5%;
+}
+.about{
+    color: #fff;
+}
+.anime{
+    color: rgb(255, 221, 0);
+}
+.name{
+    color: rgb(255, 221, 0);
+}
+.me{
+    text-align: center;
+}
+.abo{
+    color: rgb(255, 221, 0);
+}
+.img{
+    border-radius: 50%;
+}
+.myimg{
+    border-radius: 5%;
+}
+.mypic{
+    color: rgb(255, 221, 0);
+}
+.sm{
+    color: #fff;
+}
+.contact{
+    padding: 12% 5%;
+}
+.con{
+    text-align: center;
+    color: rgb(255, 221, 0);
+}
+#side{
+    text-align: center;
+    color: #fff;
+    padding: 3% 3% 3%;
+}
+.insta{
+    border-radius: 18%;
+}
+.degree{
+    text-align: center;
+    border: 2px solid rgba(255, 255, 255, .5);
+    background: rgba(0, 0, 0, .5);
+}
+
+.iiii{
+    color: rgb(255, 221, 0);
+}
+
+.iii{
+    color:  rgb(255, 221, 0);
+}
+.ii{
+    color: #fff;
+}
+.memory{
+    text-align: center;
+    padding: 5% 5%;
+}
+.memorable{
+    color: rgb(255, 221, 0);
+}
+.victoria{
+    border-radius: 5%;
+    text-align: center;
+    color: #fff;
+}
+
+.test{
+    text-align: center;
+    color: rgb(255, 221, 0);
+}
+.utsab{
+    text-align: center;
+    border: 2px solid rgba(255, 255, 255, .5);
+    background: rgba(0, 0, 0, .5);
+
+}
+.ut{
+    border-radius: 50%;
+    color: rgb(255,221,0);
+
+}
+.uts{
+    color: #fff;
+    text-align: center;
+    border-radius: 20%;
+    
+}
+.utin{
+    color: #cb0cb2;
+    text-align: center;
+    border-radius: 20%;
+    font-size: 30px;
+    font-weight: 800;
+}
+.utfb{
+    color: rgb(26, 26, 241);
+    text-align: center;
+    border-radius: 20%;
+    font-size: 30px;
+    font-weight: 800;
+}
+.project{
+    color: rgb(255,221,0);
+    text-align: center;
+    padding: 100px;
+}
+.projects{
+    text-align: center;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, .5);
+    border: 2px solid rgba(255, 255, 255, .5);
+}
+.project1{
+    color: rgb(255, 0, 212);
+    font-size: 4vh;
+    
+}
